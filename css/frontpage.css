@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: #FBD626; 
+}
+
+h1 {
+    color: #FBD626;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #78A95B;
+    padding: 22px;
+}
+
+.menu-logo {
+    width: 50px;
+    margin-right: auto; /* Push the logo to the left side */
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #000;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .menu a {
+        margin: 10px 0; /* Add margin between items */
+    }
+
+    .menu-logo {
+        margin-right: 0; /* Remove right margin for logo */
+    }
+}
+
+.headline-image {
+ 
+    
+    position: relative;
+    margin-top: -10px;
+    text-align: center; /* Center the image horizontally */
+}
+
+.headline-image img {
+    height: 600px; /* Adjust the height as needed */
+    width: 100%; /* Stretch the image width across the page */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    display: block;
+    z-index: 1;
+}
+
+
+.headline-image::after {
+    content: ""; /* Add content for the pseudo-element */
+    position: absolute; /* Position the overlay layer */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    width: 100%; /* Cover the entire container */
+    height: 100%; /* Cover the entire container */
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 2; /* Ensure the overlay layer is above the image */
+}
+
+.headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FBD626;
+    z-index: 3;
+   text-align: left;
+    font-size: 40px;
+}
+
+.text-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text-box {
+    width: 30%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+@media screen and (max-width: 768px) {
+    .text-box {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 10px auto; /* Center align on smaller screens */
+    }
+}
+
+.chapter {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+    
+    border-radius: 5px;
+}

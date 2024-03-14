@@ -1,0 +1,118 @@
+h1 {
+    color: #FBD626;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: #FBD626;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px auto; /* Set auto margins for left and right */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Make the button a block-level element */
+    text-align: center;
+}
+
+
+input[type=submit]:hover {
+    background-color: #78A95B;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #78A95B;
+    padding: 22px;
+    border-radius: 10px;
+    font-family: Arial;
+}
+
+.menu-logo {
+    width: 50px;
+    margin-right: auto; /* Push the logo to the left side */
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #000;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .menu a {
+        margin: 10px 0; /* Add margin between items */
+    }
+
+    .menu-logo {
+        margin-right: 0; /* Remove right margin for logo */
+    }
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial;
+}
+.centered {
+    text-align: center;
+    background-color: #fff;
+    font-family: Arial;
+}
+
+.error-message {
+    color: red;
+}

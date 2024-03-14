@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+   
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial;
+}
+
+h1 {
+    color: #FBD626;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center; /* Center align all content within div */
+}
+
+.user-info {
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial;
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-family: Arial;
+}
+
+.user-info .logged-in {
+    color: green;
+    font-family: Arial;
+}
+
+.user-info .not-logged-in {
+    color: red;
+    font-family: Arial;
+}
+
+
+.numbers {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* Center align the numbers */
+}
+
+
+
+
+/* menu.css */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #78A95B;
+    padding: 22px;
+    border-radius: 10px;
+    font-family: Arial;
+}
+
+.menu-logo {
+    width: 50px;
+    margin-right: auto; /* Push the logo to the left side */
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #000;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .menu a {
+        margin: 10px 0; /* Add margin between items */
+    }
+
+    .menu-logo {
+        margin-right: 0; /* Remove right margin for logo */
+    }
+}
