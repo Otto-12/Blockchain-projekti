@@ -1,9 +1,9 @@
 <?php           
 // Tietokantayhteyden tiedot
 $servername = "mariadb.vamk.fi";
-$username = "e2101504";
-$password = "9kcSag6sfXA";
-$dbname = "e2101504_Lottery";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Luo yhteys tietokantaan
 $conn = mysqli_connect($servername, $username, $password, $dbname);
