@@ -1,6 +1,6 @@
 <?php
 // Create connection
-include_once '/u/b/e2101504/public_html/PHPProject/config/config_database.php';
+include_once '/u/b/e2101504/public_html/PHPProject/Blockchain-projekti/config/config_database.php';
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Start session

@@ -1,5 +1,5 @@
 <?php
-include_once '/u/b/e2101504/public_html/PHPProject/config/config_database.php';
+include_once '/u/b/e2101504/public_html/PHPProject/Blockchain-projekti/config/config_database.php';
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

@@ -14,7 +14,7 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Create connection
-    include_once '/u/b/e2101504/public_html/PHPProject/config/config_database.php';
+    include_once '/u/b/e2101504/public_html/PHPProject/Blockchain-projekti/config/config_database.php';
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
     // Check connection
